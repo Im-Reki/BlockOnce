@@ -1,6 +1,6 @@
 import sys
 import os
-import webbrowser
+from webbrowser import open as webOpen
 from PyQt5.QtWidgets import QMainWindow, QFileDialog, QApplication
 from PyQt5.QtGui import QFontDatabase, QIcon, QCursor
 from PyQt5.QtCore import Qt
@@ -62,11 +62,11 @@ class MyApp(QMainWindow, Ui_MainWindow):
 # Link to my Github profile
 
     def profileButton(self):
-        webbrowser.open("https://github.com/Im-Reki")
+        webOpen("https://github.com/Im-Reki")
 # Link to the Repository
 
     def githubButton(self):
-        webbrowser.open("https://github.com/Im-Reki/BlockOnce")
+        webOpen("https://github.com/Im-Reki/BlockOnce")
 # Minimize Button
 
     def minimizedButton(self):
